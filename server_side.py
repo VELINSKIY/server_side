@@ -10,7 +10,7 @@ from exceptions import ValidationException, EntityNotFoundException
 from errors import http_response, api_exception_handler
 
 app = Flask(__name__)
-basedir = 'C:\\Users\\velin\\Desktop\\Projects\\Python\\newfolder'
+basedir = 'REMOVED'
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///' + os.path.join(basedir, 'users.db')
 app.config['SQLALCHEMY_BINDS'] = {'items': 'sqlite:///' + os.path.join(basedir, 'items.db')}
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
